@@ -11,15 +11,32 @@
 
 
 
-const axios = require("axios");
+// const axios = require("axios");
 
-const getData = async() => {
-    try {
-        let res = await axios.get("https://jsonplaceholder.typicode.com/users")
+// const getData = async() => {
+//     try {
+//         let res = await axios.get("https://jsonplaceholder.typicode.com/users")
 
-        return res;
-    } catch (error) {
-        console.log(error);
-    }
+//         return res;
+//     } catch (error) {
+//         console.log(error);
+//     }
+// }
+// module.exports = getData;
+
+
+
+
+const getCallculator = async(a, b, c, d) => {
+
+    return a + b * c / d
+
 }
-module.exports = getData;
+
+
+const getAll = (a) => {
+
+    return a.length
+
+}
+module.exports = {getCallculator, getAll};
